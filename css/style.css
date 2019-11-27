@@ -26,3 +26,15 @@
 .nav-item>.nav-link:hover{
     background-color: RGBA(0,0,0,0);
 }
+
+.card{
+    border: 6px solid red;
+    border-top: 0;
+    border-radius: 0;
+}
+
+.card-header, .card-header:first-child{
+    text-align: center;
+    background: red;
+    border-radius: 0;
+}

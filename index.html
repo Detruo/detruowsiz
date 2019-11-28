@@ -13,57 +13,100 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row header">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <img class="logo" src="img/logo.png" alt="logo" width="100%"/>
-        <nav class="navbar navbar-light" style="background-color: #ffbb26;">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon-home"></i>STRONA GŁÓWNA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon-thumbs-up-alt"></i>ZAGŁOSUJ</a>
-            </li>
-            <li class="nav-item shop">
-              <a class="nav-link" href="#"><i class="icon-basket"></i>SKLEP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon-crown"></i>ADMINISTRACJA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon-chat-empty"></i>FORUM</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-    <div class="row content">
-      <div class="col-md-2"></div>
-      <div class="col-md-6">
-        <div class="card news">
-          <div class="card-header">
-            <h4>INFORMACJE</h4>
-          </div>
-          <div class="card-body">
-            aaaa
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2">
-          <div class="card server_status">
-            <div class="card-header">
-              <h4>STATUS SERWERA</h4>
-            </div>
-            <div class="card-body">
-              aaa
-            </div>
-          </div>
-      </div>
-      <div class="col-md-2"></div>
+  <div class="row nawigacja fixed-top">
+    <div class="col-md-12">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#homepage">STRONA GŁÓWNA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#prezentacja">PREZENTACJA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">AKTUALIZACJE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SKLEP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ADMINISTRACJA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">KONTAKT</a>
+        </li>
+      </ul>
     </div>
   </div>
+  <div class="content-logo" id="homepage">
+    <img src="img/logo.png" />
+    <h1>Niezapomniane potyczki!</h1>
+  </div>
+  <div class="content-prezentacja" id="prezentacja">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="content-prezentacja-header">
+        <h1>Prezentacja serwera</h1>
+      </div>
+      <div class="content-prezentacja-body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Czym jest Survival Games?</div>
+              <div class="card-body">
+                <p>Na arenę trafia 4-16 graczy, których zadaniem jest wyeliminowanie swoich przeciwników</p>
+                <p>Pomóc w tym mają przedmioty umieszczone w skrzyniach na środku punktu startowego areny, jak i również ukryte po całej arenie</p>
+                <p>Wiele z tych przedmiotów mogą pomóc w walce z przeciwnikiem lub w przeżyciu, lecz niektóre dają dodatkowe efekty!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Klasy postaci</div>
+              <div class="card-body">
+                <p>Na serwerze dodano wiele klas postaci, zaczynając od podstawowych takich jak: Wojownik, Lucznik lub Obrońca, kończąc na klasach specjalnych dających dodatkowe efekty np. spowalnianie czasu lub niewidzialność</p>
+                <p>Istnieją także klasy dodatkowe dla rang <span style="color: yellow; font-weight: bold; text-shadow: 0 0 3px #000">VIP</span> oraz <span style="color: gold; font-weight: bold; text-shadow: 0 0 3px #000">SVIP</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Eventy co tydzień</div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row links">
+          <a href="#">
+            <i class="icon-home"></i>
+            <p>
+              IP serwera:
+              <br>
+              ipserwera.pl
+            </p>
+          </a>
+          <a href="#">
+            <i class="icon-doc-text-inv"></i>
+            <p>
+              Regulamin
+            </p>
+          </a>
+          <a href="#">
+            <i class="icon-help-circled"></i>
+            <p>
+              FAQ
+            </p>
+          </a>
+          <a href="#">
+            <i class="glyphicon-envelope"></i>
+            <p>
+              Kontakt
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="przerywnik"></div>
 </body>
 </html>

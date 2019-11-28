@@ -5,36 +5,91 @@
     border: 1px solid black;
 }
 
-.container-fluid{
-    background-color: #fff79c;
+body{
+    background-color: #3d3d3d;
 }
 
-.logo{
-    padding: 20px 0;
-}
-
-.nav-item{
-    padding: 0 15px;
-}
-
-.nav-item>.nav-link{
-    color: white;
-    font-weight: bold;
+.nawigacja{
+    background-color: #fff;
     font-size: 18px;
 }
 
-.nav-item>.nav-link:hover{
-    background-color: RGBA(0,0,0,0);
+.nav-item{
+    margin: 0 15px;
+    padding: 3px 0;
 }
 
-.card{
-    border: 6px solid red;
-    border-top: 0;
-    border-radius: 0;
-}
-
-.card-header, .card-header:first-child{
+.content-logo{
     text-align: center;
-    background: red;
-    border-radius: 0;
+}
+
+.content-prezentacja{
+    background-color: #fff;
+    display: flex;
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content-logo > h1{
+    color: white;
+}
+
+.content-prezentacja-header > h1{
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.content-prezentacja-body{
+    margin-top: 20px;
+}
+
+.content-prezentacja-body > .row > .col-md-4 > .card > .card-header{
+    background-color: #ffa424;
+    font-size: 16px;
+}
+.content-prezentacja-body > .row > .col-md-4 > .card > .card-body{
+    background-color: #ffe6c4;
+    box-sizing: border-box;
+    padding: 8px;
+    text-align: left;
+}
+
+.links{
+    margin-top: 25px;
+}
+
+.links > a{
+    margin: 0 auto;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.links > a > i{
+    width: 80px;
+    height: 80px;
+    background-color: #3d3d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    color: white;
+    transition: background-color 0.3s, font-size 0.3s;
+}
+
+.links > a > p{
+    color: #3d3d3d;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.links > a > i:hover{
+    background-color: #ffa424;
+    font-size: 45px;
+    transition: background-color 0.3s, font-size 0.3s;
+}
+
+.przerywnik{
+    height: 500px;
 }

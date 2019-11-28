@@ -13,28 +13,28 @@
       "src": "fontawesome"
     },
     {
-      "uid": "5e2ab018e3044337bcef5f7e94098ea1",
-      "css": "thumbs-up-alt",
-      "code": 61796,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "9affc98d652b86628d650ee58dbf0357",
-      "css": "basket",
-      "code": 59393,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "31951fbb9820ed0690f675b3d495c8da",
-      "css": "chat-empty",
-      "code": 61670,
-      "src": "fontawesome"
-    },
-    {
       "uid": "186dec7a13156bbe2550790c158fb85d",
       "css": "crown",
       "code": 59460,
       "src": "fontelico"
+    },
+    {
+      "uid": "c08a1cde48d96cba21d8c05fa7d7feb1",
+      "css": "doc-text-inv",
+      "code": 61788,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a3d734a5b4bec33fc3aa459d82092b23",
+      "css": "help-circled",
+      "code": 59393,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "b6ef4443ecc502136135437837d9724b",
+      "css": "mail",
+      "code": 59394,
+      "src": "elusive"
     }
   ]
 }

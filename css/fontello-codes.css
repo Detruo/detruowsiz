@@ -1,6 +1,6 @@
 
 .icon-home:before { content: '\e800'; } /* '' */
-.icon-basket:before { content: '\e801'; } /* '' */
+.icon-help-circled:before { content: '\e801'; } /* '' */
+.icon-mail:before { content: '\e802'; } /* '' */
 .icon-crown:before { content: '\e844'; } /* '' */
-.icon-chat-empty:before { content: '\f0e6'; } /* '' */
-.icon-thumbs-up-alt:before { content: '\f164'; } /* '' */
+.icon-doc-text-inv:before { content: '\f15c'; } /* '' */

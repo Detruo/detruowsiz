@@ -5,6 +5,10 @@
     border: 1px solid black;
 }
 
+.box_shadow{
+    box-shadow: 10px 0 8px black;
+}
+
 body{
     background-color: #3d3d3d;
 }
@@ -23,7 +27,7 @@ body{
     text-align: center;
 }
 
-.content-prezentacja{
+.content-prezentacja, .content-aktualizacje{
     background-color: #fff;
     display: flex;
     margin-top: 60px;
@@ -35,7 +39,7 @@ body{
     color: white;
 }
 
-.content-prezentacja-header > h1{
+.content-header > h1{
     border-bottom: 1px solid black;
     padding-bottom: 20px;
 }
@@ -92,4 +96,29 @@ body{
 
 .przerywnik{
     height: 500px;
+}
+
+.update-item{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.update-item-title{
+    color: #ffa424;
+    text-transform: uppercase;
+}
+
+.update-item-date, .update-item-body{
+    font-size: 16px;
+}
+
+.update-item-body{
+    margin-top: 20px;
+}
+
+.footer{
+    display: flex;
+    background-color: #ffa424;
+    justify-content: center;
+    margin: 0;
 }

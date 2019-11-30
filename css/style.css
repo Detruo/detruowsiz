@@ -9,6 +9,10 @@
     box-shadow: 10px 0 8px black;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
@@ -27,23 +31,13 @@ body{
 
 .content-logo{
     text-align: center;
+    padding: 30px 0;
 }
 
 .content{
     background-color: #fff;
-    display: flex;
-    margin-top: 60px;
     text-align: center;
     padding: 20px 0;
-}
-
-.content-logo > h1{
-    color: white;
-}
-
-.content-header > h1{
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
 }
 
 .content-prezentacja-body{
@@ -164,4 +158,28 @@ body{
     width: 60%;
     border-radius: 30%;
     box-shadow: 0 0 15px black;
+    background: #fccd86;
+}
+
+
+.to-top{
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background: #3d3d3d;
+    border-radius: 50%;
+    color: white;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 99;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.to-top:hover{
+    background: #5d5d5d;
+    transition: background 0.3s;
 }

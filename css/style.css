@@ -161,25 +161,28 @@ body{
     background: #fccd86;
 }
 
-
 .to-top{
     font-size: 40px;
     width: 80px;
     height: 80px;
-    text-align: center;
-    background: #3d3d3d;
-    border-radius: 50%;
-    color: white;
     position: fixed;
     bottom: 30px;
-    right: 20px;
-    z-index: 99;
-    padding: 8px 0;
-    cursor: pointer;
-    transition: background 0.3s;
+    right: 30px;
+    background: #3d3d3d;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px white;
+    transition: font-size 0.3s, background-color 0.3s, padding 0.3s;
+}
+
+.to-top > a{
+    color: white;
 }
 
 .to-top:hover{
-    background: #5d5d5d;
-    transition: background 0.3s;
+    font-size: 50px;
+    background-color: #5d5d5d;
+    padding: 0;
+    transition: font-size 0.3s, background-color 0.3s, padding 0.3s;
 }

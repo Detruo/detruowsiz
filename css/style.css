@@ -46,6 +46,11 @@ body{
     margin-bottom: 400px;
 }
 
+.content-header{
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
 .content-prezentacja-body{
     margin-top: 20px;
 }

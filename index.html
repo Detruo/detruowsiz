@@ -9,12 +9,11 @@
 
   <link rel="stylesheet" href="css/fontello.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-  <link href="libs/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="libs/stackpath_bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  <link rel="stylesheet" href="libs/stackpath_bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-  <script src="libs/stackpath_bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="libs/jquery-3.4.1.min.js"></script>
+  <link href="libs/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   <script src="js/top_button.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -267,9 +266,9 @@
     </div>
     <div class="col-md-6 right text-left">
       <span>Designed by Maciej Kaczmarek (Detruo)</span>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="myInput">
       Open modal
-    </button>
+      </button>
     </div>
   </div>
 
@@ -279,29 +278,22 @@
     </a>
   </div>
 
-
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-
-        <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
         </div>
-
-        <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
+          ...
         </div>
-
-        <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-
       </div>
     </div>
   </div>
+
+
 </body>
 </html>

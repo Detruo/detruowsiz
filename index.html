@@ -37,13 +37,13 @@
           <a class="nav-link" href="#administracja">ADMINISTRACJA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#kontakt">KONTAKT</a>
+          <a class="nav-link" data-toggle="modal" data-target="#contactModal">KONTAKT</a>
         </li>
       </ul>
     </div>
   </div>
   <div class="content-logo" id="homepage">
-    <img src="img/logo.png" />
+    <img src="img/logo.png" alt="logo"/>
   </div>
   <div class="container-fluid content content-prezentacja box_shadow" id="prezentacja">
     <div class="container">
@@ -266,9 +266,6 @@
     </div>
     <div class="col-md-6 right text-left">
       <span>Designed by Maciej Kaczmarek (Detruo)</span>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="myInput">
-      Open modal
-      </button>
     </div>
   </div>
 
@@ -278,22 +275,49 @@
     </a>
   </div>
 
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <h4 class="modal-title" id="exampleModalLongTitle">Skontakuj się z nami</h4>
         </div>
         <div class="modal-body">
-          ...
+          <form>
+            <div class="form-group">
+              <label for="nickname">Nick z gry</label>
+              <input type="text" class="form-control" id="nickname" placeholder="Podaj nick z gry"/>
+            </div>
+            <div class="form-group">
+              <label for="email">Adres email</label>
+              <input type="email" id="email" class="form-control" placeholder="Podaj email" aria-describedby="emailHelp" />
+              <small id="emailHelp" class="form-text text-muted">Twój adres email jest wymagany do kontaktu z Tobą.<br>Nigdy nie rozpowszechniamy cudzych adresów email.</small>
+            </div>
+            <div class="form-group">
+              <label for="IssueType">Podaj kategorię problemu</label>
+              <select class="form-control" id="IssueType" size="1">
+                <option>Problem z grą</option>
+                <option>Problem z założeniem konta</option>
+                <option>Problem z płatnościami</option>
+                <option>Zgłoszenie gracza</option>
+                <option>Inne</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="textarea">Wiadomość</label>
+              <textarea class="form-control" id="textarea" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="file">Zrzut ekranu (jeśli wymagane)</label>
+              <input type="file" class="form-control-file" id="file" accept=".jpg, .png, .gif">
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+          <button type="button" class="btn btn-warning">Wyślij</button>
         </div>
       </div>
     </div>
   </div>
-
-
 </body>
 </html>

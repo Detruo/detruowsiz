@@ -135,15 +135,15 @@ body{
     margin: 20px 0;
 }
 
-.coins > .card-header{
+.coins > .card > .card-header{
     background: #e6d132;
 }
 
-.vip > .card-header{
+.vip > .card > .card-header{
     background: #e6b032;
 }
 
-.svip > .card-header{
+.svip > .card > .card-header{
     background: #e68c32;
 }
 

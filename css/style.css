@@ -50,6 +50,7 @@ body{
 .content-header{
     border-bottom: 1px solid black;
     padding: 10px 0;
+    text-transform: uppercase;
 }
 
 .content-prezentacja-body{
@@ -75,6 +76,7 @@ body{
     margin: 0 auto;
     text-decoration: none;
     color: #3d3d3d;
+    cursor: pointer;
 }
 
 .links > a > i{

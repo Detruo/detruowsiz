@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--BODY-->
   <div class="nawigacja container-fluid box_shadow" id="top">
     <div class="container">
       <ul class="nav justify-content-center">
@@ -79,31 +80,21 @@
           </div>
         </div>
         <div class="row links">
-          <a href="#">
+          <a>
             <i class="icon-home"></i>
-            <p>
-              IP serwera:
-              <br>
-              ipserwera.pl
-            </p>
+            <p>IP serwera: <br> HGarena.pl</p>
           </a>
-          <a href="#">
+          <a data-toggle="modal" data-target="#rulesModal">
             <i class="icon-doc-text-inv"></i>
-            <p>
-              Regulamin
-            </p>
+            <p>Regulamin</p>
           </a>
-          <a href="#">
+          <a data-toggle="modal" data-target="#faqModal">
             <i class="icon-help-circled"></i>
-            <p>
-              FAQ
-            </p>
+            <p>FAQ</p>
           </a>
-          <a href="#">
+          <a data-toggle="modal" data-target="#contactModal">
             <i class="icon-mail"></i>
-            <p>
-              Kontakt
-            </p>
+            <p>Kontakt</p>
           </a>
         </div>
       </div>
@@ -269,12 +260,14 @@
     </div>
   </div>
 
+<!--BUTTON TO TOP-->
   <div class="fixed-action-btn to-top">
     <a href="#top" class="btn-floating btn-large red">
       <i class="icon-up-big"></i>
     </a>
   </div>
-
+<!--MODALS-->
+<!--MODAL-CONTACT-->
   <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -315,6 +308,45 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
           <button type="button" class="btn btn-warning">Wyślij</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--MODAL-RULES-->
+  <div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLongTitle">Regulamin serwera HGarena.pl</h4>
+        </div>
+        <div class="modal-body">
+          <p>1. </p>
+          <p>1. </p>
+          <p>1. </p>
+          <p>1. </p>
+          <p>1. </p>
+          <p>1. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--MODAL-FAQ-->
+  <div class="modal fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLongTitle">Najczęściej zadawane pytania</h4>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
         </div>
       </div>
     </div>

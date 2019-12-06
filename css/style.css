@@ -17,11 +17,13 @@ body{
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .nawigacja{
     background-color: #fff;
     font-size: 18px;
+    width: 100vw;
 }
 
 .nav-item{
@@ -45,6 +47,11 @@ body{
     text-align: center;
     padding: 20px 0;
     margin-bottom: 400px;
+    width: 100vw;
+}
+
+#administracja{
+    margin-bottom: 0;
 }
 
 .content-header{

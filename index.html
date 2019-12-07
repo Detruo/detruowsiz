@@ -69,6 +69,7 @@
               <div class="card-body">
                 <p>Na serwerze dodano wiele klas postaci, zaczynając od podstawowych takich jak: Wojownik, Lucznik lub Obrońca, kończąc na klasach specjalnych dających dodatkowe efekty np. spowalnianie czasu lub niewidzialność</p>
                 <p>Istnieją także klasy dodatkowe dla rang <span style="color: yellow; font-weight: bold; text-shadow: 0 0 3px #000">VIP</span> oraz <span style="color: gold; font-weight: bold; text-shadow: 0 0 3px #000">SVIP</span></p>
+                <button class="classes-open btn btn-info" data-toggle="modal" data-target="#classesModal">Zobacz klasy</button>
               </div>
             </div>
           </div>
@@ -321,13 +322,17 @@
           <h4 class="modal-title" id="exampleModalLongTitle">Regulamin serwera HGarena.pl</h4>
         </div>
         <div class="modal-body">
-          <p>1. Na serwerze obowiązuje wzajemny szacunek, niezależnie od rangi</p>
-          <p>2. Używanie wspomagaczy (Modów, Hacków, Cheatów, Programów stron trzecich) będzie surowo karane</p>
-          <p>3. Zabrania się:</p>
-          <p> 3.1. Lamania regulaminu </p>
-          <p> 3.2. Pisania caps lockiem, floodowania </p>
-          <p> 3.3. Spamowania</p>
-          <p> 3.4. Nękania innych użytkowników serwera</p>
+          <ol>
+            <li>1. Na serwerze obowiązuje wzajemny szacunek, niezależnie od rangi</li>
+            <li>2. Używanie wspomagaczy (Modów, Hacków, Cheatów, Programów stron trzecich) będzie surowo karane</li>
+            <li>3. Zabrania się:</li>
+              <ol>
+            <li> 3.1. Lamania regulaminu</li>
+            <li> 3.2. Pisania caps lockiem, floodowania</li>
+            <li> 3.3. Spamowania</li>
+            <li> 3.4. Nękania innych użytkowników serwera</li>
+              </ol>
+          </ol>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
@@ -358,6 +363,39 @@
             <h4>W jaki sposób serwer będzie rozwijany?</h4>
             <h5>Kluczowm sposobem na rozwijanie serwera jest tworzenie nowych klas postaci, tworzenie oraz uatrakcyjnianie aren gry</h5>
           </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--MODAL CLASSES-->
+  <div class="modal fade" id="classesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLongTitle">Najczęściej zadawane pytania</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+            <tr>
+              <th>Nazwa klasy</th> <th>Opis</th> <th>Cena</th>
+            </tr>
+            <tr>
+              <td>Wojownik</td> <td>Używając swojego ciężkiego miecza, pokonuj przeciwników z dużą siłą</td> <td>100$</td>
+            </tr>
+            <tr>
+              <td>Mag</td> <td>Siły żywiołów są w Twoim posiadaniu. Używaj ich rozsądnie</td> <td>125$</td>
+            </tr>
+            <tr>
+              <td>Rycerz</td> <td>Odwaga i męstwo to podstawowe cechy rycerza. Rycerz nie boi się wyzwań, a Ty?</td> <td>200$</td>
+            </tr>
+            <tr>
+              <td>Strzelec</td> <td>Każdy kij ma dwa końce a strzała ma ostrze tylko po jednej stronie, więc celuj z wyczuciem</td> <td>200$</td>
+            </tr>
+          </table>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>

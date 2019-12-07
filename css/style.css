@@ -182,6 +182,13 @@ body{
     background: #fccd86;
 }
 
+.modal-body > ol{
+    list-style-type: none;
+    line-height: 5vh;
+    margin: 0;
+    padding: 0 2%;
+}
+
 .to-top{
     font-size: 40px;
     width: 80px;

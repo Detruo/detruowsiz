@@ -42,6 +42,10 @@ body{
     padding: 30px 0;
 }
 
+.content-logo > img{
+    width: 35%;
+}
+
 .content{
     background-color: #fff;
     text-align: center;
@@ -75,6 +79,9 @@ body{
     text-align: left;
 }
 
+.classes-button{
+    text-align: right;
+}
 .links{
     margin-top: 25px;
 }
@@ -214,4 +221,15 @@ body{
     background-color: #5d5d5d;
     padding: 0;
     transition: font-size 0.3s, background-color 0.3s, padding 0.3s;
+}
+
+.voting{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+tfoot{
+    text-align: center;
 }

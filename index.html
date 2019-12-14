@@ -2,6 +2,10 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="Strona poświęcona serwerowi Minecraft - HGarena" />
+  <meta name="keywords" content="minecraft,server,arena,hungergames,fight" />
+  <meta name="author" content="Maciej Kaczmarek" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WSIZ Projekt - Minecraft Server</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -16,6 +20,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   <script src="js/top_button.js"></script>
   <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    function vote(){
+      votes = parseInt( $(".votes").html() );
+      $(".votes").html(votes+1);
+    }
+  </script>
 </head>
 <body>
 <!--BODY-->
@@ -69,14 +80,18 @@
               <div class="card-body">
                 <p>Na serwerze dodano wiele klas postaci, zaczynając od podstawowych takich jak: Wojownik, Lucznik lub Obrońca, kończąc na klasach specjalnych dających dodatkowe efekty np. spowalnianie czasu lub niewidzialność</p>
                 <p>Istnieją także klasy dodatkowe dla rang <span style="color: yellow; font-weight: bold; text-shadow: 0 0 3px #000">VIP</span> oraz <span style="color: gold; font-weight: bold; text-shadow: 0 0 3px #000">SVIP</span></p>
-                <button class="classes-open btn btn-info" data-toggle="modal" data-target="#classesModal">Zobacz klasy</button>
+                <div class="classes-button">
+                  <button class="classes-open btn btn-danger" data-toggle="modal" data-target="#classesModal">Zobacz klasy</button>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
               <div class="card-header">Eventy co tydzień</div>
-              <div class="card-body"></div>
+              <div class="card-body">
+                <p>Dużo zabawy i przyjemności zapewnią wam cotygodniowe eventy prowadzone przez administrację. Zapewnimy wam wiele nagród do wygrania, dobrej zabawy i wiele przydatnych taktyk</p>
+              </div>
             </div>
           </div>
         </div>
@@ -267,6 +282,17 @@
       <i class="icon-up-big"></i>
     </a>
   </div>
+
+<!--VOTE BUTTON-->
+  <div class="voting">
+    <div class="card">
+      <div class="card-header">Zagłosuj na nas</div>
+      <div class="card-body">
+        <button class="btn btn-success" onclick="vote()">Zagłosuj</button>
+      </div>
+      <div class="card-footer">Głosy: <span class="votes">0</span></div>
+    </div>
+  </div>
 <!--MODALS-->
 <!--MODAL-CONTACT-->
   <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -380,21 +406,59 @@
         </div>
         <div class="modal-body">
           <table class="table table-striped">
-            <tr>
-              <th>Nazwa klasy</th> <th>Opis</th> <th>Cena</th>
-            </tr>
-            <tr>
-              <td>Wojownik</td> <td>Używając swojego ciężkiego miecza, pokonuj przeciwników z dużą siłą</td> <td>100$</td>
-            </tr>
-            <tr>
-              <td>Mag</td> <td>Siły żywiołów są w Twoim posiadaniu. Używaj ich rozsądnie</td> <td>125$</td>
-            </tr>
-            <tr>
-              <td>Rycerz</td> <td>Odwaga i męstwo to podstawowe cechy rycerza. Rycerz nie boi się wyzwań, a Ty?</td> <td>200$</td>
-            </tr>
-            <tr>
-              <td>Strzelec</td> <td>Każdy kij ma dwa końce a strzała ma ostrze tylko po jednej stronie, więc celuj z wyczuciem</td> <td>200$</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Kategoria</th> <th>Nazwa klasy</th> <th>Opis</th> <th>Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Wręcz</td>
+                <td colspan="3">
+                  <table class="table table-striped">
+                    <tr>
+                      <td>Wojownik</td> <td>Używając swojego ciężkiego miecza, pokonuj przeciwników z dużą siłą</td> <td>100$</td>
+                    </tr>
+                    <tr>
+                      <td>Rycerz</td> <td>Odwaga i męstwo to podstawowe cechy rycerza. Rycerz nie boi się wyzwań, a Ty?</td> <td>200$</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>Magowie</td>
+                <td colspan="3">
+                  <table class="table table-striped">
+                    <tr>
+                      <td>Czarodziej</td> <td>Siły żywiołów są w Twoim posiadaniu. Używaj ich rozsądnie</td> <td>125$</td>
+                    </tr>
+                    <tr>
+                      <td>Czarnoksiężnik</td> <td>Ciemne moce zawładnęły Twoją duszą. Użyj ich w walce!</td> <td>300$</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>Dystans</td>
+                <td colspan="3">
+                  <table class="table table-striped">
+                    <tr>
+                      <td>Strzelec</td> <td>Każdy kij ma dwa końce a strzała ma ostrze tylko po jednej stronie, więc celuj z wyczuciem</td> <td>200$</td>
+                    </tr>
+                    <tr>
+                      <td>Snajper</td> <td>Najważniejszą cechą snajpera jest duży dystans. Wykorzystaj to!</td> <td>500$</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  <h6>Lista klas będzie w przyszłości rozwijana</h6>
+                </td>
+              </tr>
+            </tfoot>
           </table>
         </div>
         <div class="modal-footer">
@@ -403,5 +467,7 @@
       </div>
     </div>
   </div>
+
+
 </body>
 </html>
